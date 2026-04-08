@@ -1,4 +1,8 @@
+FROM nginx:trixie-perl
 
-EXPOSE 80
+COPY index.html /usr/share/nginx/html/
 
-#docker build -t 
+EXPOSE 4000
+
+# docker build -t web .
+# docker run --name test3 -p 8080:80 web
